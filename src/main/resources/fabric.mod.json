@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "addon-template",
+  "version": "${version}",
+  "name": "Addon Template",
+  "description": "MatHax Client addon template.",
+  "authors": [
+    "pog5"
+  ],
+  "contact": {
+    "repo": "https://github.com/pog5/mathax-addon-template"
+  },
+  "icon": "assets/template/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "dummy.addon.template.TemplateAddon"
+    ]
+  },
+  "mixins": [
+    "template.mixins.json"
+  ],
+  "custom": {
+    "meteor-client:color": "225,25,25"
+  },
+  "depends": {
+    "java": ">=17",
+    "minecraft": ">=1.18",
+    "meteor-client": "*"
+  }
+}
